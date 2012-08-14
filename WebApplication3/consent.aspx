@@ -6,7 +6,7 @@
     function checkbox_checker() {
 
         var consent = false;
-        if (form.checkbox.checked == 1)
+        if (form.checkbox.checked==1)
             consent = true
 
         if (!consent) {
