@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication3", "WebApplication3\WebApplication3.csproj", "{957B1364-676C-48C5-8AEA-65D99B05B52D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://bond-pc:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WebApplication3\\WebApplication3.csproj
+		SccProjectName1 = WebApplication3
+		SccLocalPath1 = WebApplication3
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{957B1364-676C-48C5-8AEA-65D99B05B52D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{957B1364-676C-48C5-8AEA-65D99B05B52D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{957B1364-676C-48C5-8AEA-65D99B05B52D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{957B1364-676C-48C5-8AEA-65D99B05B52D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

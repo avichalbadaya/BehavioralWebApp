@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 40% }
+    </style>
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAabirU2cPAJm-xMUu_3bt6yIcTjuhFVDc&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var myOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 1,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var marker = new google.maps.LatLng(-34.397, 150.644)
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            myOptions);
+      }
+      
+   
+  </script>
+  <script type="text/javascript">
+    function loadxml()
+    {
+    var xmlDoc;      
+      if (window.XMLHttpRequest)
+		  {// code for IE7+, Firefox, Chrome, Opera, Safari
+		  xmlhttp=new XMLHttpRequest();
+		  }
+		else
+		  {// code for IE6, IE5
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  }
+		xmlhttp.open("GET","C:\myWebSite\Data.xml",false);
+		xmlhttp.send();
+		xmlDoc=xmlhttp.responseXML;
+	    readXML();
+	    }
+ 
+    function readXML()
+    {
+       
+}
+  </script>
+      
+      
+ </head>
+  <body >
+  <script type="text/javascript" language="javascript"> javascript:loadxml(); </script>
+    <div id="map_canvas" style="width:38%; height:70%"></div>
+  </body>
+</html>
