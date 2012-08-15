@@ -15,7 +15,7 @@
         and other participants will be participating in an online social decision study. 
         You are one of 30 participants who will be participating in today's 
         session. Momentarily, you will be interacting with them over the 
-        Internet in a series of &quot;exchange&quot;</p>
+        Internet in a series of &quot;exchange Games&quot;</p>
       <p class="text"> The entire study lasts less than 45 minutes and takes place 
         online from your current computer terminal. </p>
       <p class="text">Next, we ask you to read the Consent Form that explains your participant rights. </p>
