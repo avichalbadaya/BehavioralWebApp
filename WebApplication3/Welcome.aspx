@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-<table width="802" border="0" cellspacing="0" cellpadding="0" align="center">
+    <table width="802" border="0" cellspacing="0" cellpadding="0" align="center">
   <tr>
     <td width="802"><div align="right"> 
         <p>&nbsp; </p>
@@ -11,11 +11,11 @@
   </tr>
   <tr>
     <td class="tab_box_bottom" valign="top"> <p>&nbsp;</p>
-      <p class="text">Welcome to the Behavioral Research Lab-Online at Columbia Business School. Today, you 
-        and other participants will be participating in an online social decision study. 
-        You are one of 30 participants who will be participating in today's 
-        session. Momentarily, you will be interacting with them over the 
-        Internet in a series of &quot;exchange Games&quot;</p>
+      <p class="text">Welcome to the Behavioral Research eLab at Columbia Business School. Today, you 
+        and other participants will be participating in a &quot;Virtual Organization&quot; study. 
+        You are one of 15 participants who will be participating in this session. 
+          Momentarily, you will be interacting with them over the Internet in a series of 
+          simple group tasks.</p>
       <p class="text"> The entire study lasts less than 45 minutes and takes place 
         online from your current computer terminal. </p>
       <p class="text">Next, we ask you to read the Consent Form that explains your participant rights. </p>
