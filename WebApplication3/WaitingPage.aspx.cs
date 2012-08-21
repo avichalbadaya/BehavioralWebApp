@@ -131,7 +131,7 @@ namespace WebApplication3
             }
             else
             {
-                lblNoOfPlayers.Text = "Total No. of players waiting:- " + Application["OnlineUsers"].ToString();
+                lblNoOfPlayers.Text = "Waiting for " + Application["OnlineUsers"].ToString();
             }
         }
 

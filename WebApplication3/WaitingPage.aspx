@@ -13,20 +13,21 @@
 <asp:ScriptManager ID="ScriptManager1" runat="server">
     </asp:ScriptManager>
 <br/>
-<br/>
+    You are currently in the Waiting Room.<br/>
 <br/>
 <br/>
 
 
-<div id="Div1" style="font-size:medium; text-align:center">Hi 
+    <div id="Div1" style="font-size:medium; text-align:center">Your ID is: 
  <asp:Label ID="Label1" runat="server"  style="font-size:medium; text-align:center"></asp:Label>
 </div>
 <br/>
     
    
   <div id="dvWait" style="font-size:medium; text-align:center">
-Please Wait for other players to join the pool....
- <asp:Timer ID="UpdateTimeCheck" interval="1000" runat="server" ontick="UpdateTimer_Tick"></asp:Timer>
+        Waiting for 15 players to enter the waiting room...<br /><br />
+    <img src="graphics/hourglass.gif"/>&nbsp;
+    <asp:Timer ID="UpdateTimeCheck" interval="1000" runat="server" ontick="UpdateTimer_Tick"></asp:Timer>
     <asp:UpdatePanel runat="server" id="TimedPanel" updatemode="Conditional">
             <Triggers>
                 <asp:AsyncPostBackTrigger controlid="UpdateTimeCheck" eventname="Tick" />
@@ -37,8 +38,7 @@ Please Wait for other players to join the pool....
             </ContentTemplate>
         </asp:UpdatePanel>
 </div>
-   
-<br/>
+&nbsp;<br/>
 <br/>
 <br/>
 </asp:Content>

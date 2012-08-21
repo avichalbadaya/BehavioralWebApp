@@ -24,9 +24,6 @@
                 return false;
             }
         }
-
-
-
         return true;
 
     }
@@ -40,9 +37,7 @@
   </tr>
 
   <tr>
-    <td class="tab_box_bottom" valign="top"> <p>
-                &nbsp;<asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" 
-                    ValidationGroup="vldGrp1" />
+    <td class="tab_box_bottom" valign="top"> 
       <p class="text">Below is your consent form. Before agreeing to participate 
         in the study, we ask that you read this form carefully. You will receive 
         an email copy of this form to keep for your records.</p>
@@ -54,11 +49,11 @@
       <p class="consent"><strong>Risks and Benefits of being in the Study:</strong> 
         We do not anticipate any risks for you participating in this study, other 
         than those encountered in day-to-day life. </p>
-      <p class="consent"><strong>Compensation:</strong> For your participation, 
-        you will receive $4-8 in cash, depending on your performance. </p>
-      <p class="consent"><strong>Voluntary Nature of Participation: </strong>Your 
-        decision whether or not to participate will not affect your current or 
-        future relations with the University. If you participate, you may decide 
+      <p class="consent"><strong>Compensation:</strong> For your full participation, you 
+          will receive $5-12 in cash, depending on your performance. PLEASE NOTE that we 
+          guarantee payment to only those who complete an entire session.</p>
+      <p class="consent"><strong>Voluntary Nature of Participation: </strong>Your decision 
+          to participate is entirely voluntary. If you participate, you may decide 
         to terminate your participation or withdraw your information at any time.</p>
       <p class="consent"><strong>Confidentiality:</strong> The records of this 
         study will be kept private. During the study, you and other participants 
@@ -77,65 +72,61 @@
         (For this reason, it is very important that you submit a valid and complete 
         email address). Your personal information will NOT be shared with anyone.      </p>
       
-        <table width="675" border="0" align="center" cellpadding="0" cellspacing="0">
+        <table width="600" class="dottedtable" align="center">
           <tr> 
-            <td width="462" class="text"> <p align="right">I have read and understand 
-                the above information. <br>
-                I consent to participate in the study.</p></td>
-            <td width="188" class="smalltx"> <div align="center"> 
-                <asp:CheckBox ID="chkIAgree" runat="server" />
-&nbsp;</div></td>
+            <td class="righttext">I have read the above information. I consent to participate in the study.</td>
+            <td class="smalltx" width="175"> <div align="center"> <asp:CheckBox ID="chkIAgree" runat="server" />&nbsp;</div></td>
           </tr>
           <tr> 
-            <td class="text"><div align="right">First name </div></td>
+            <td class="righttext">First name</td>
             <td> <div align="center"> 
                 <asp:TextBox runat = "server" id="first"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
-                    ControlToValidate="first" ErrorMessage="Kindly Enter First Name" 
+                    ControlToValidate="first" ErrorMessage="Please enter your first name" 
                     ForeColor="Red" ValidationGroup="vldGrp1" Display="Dynamic">*</asp:RequiredFieldValidator>
               </div></td>
           </tr>
           <tr> 
-            <td class="text"><div align="right">Last name </div></td>
+            <td class="righttext">Last name</td>
             <td> <div align="center"> 
                 <asp:TextBox runat = "server"  id="last"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
-                    ControlToValidate="last" ErrorMessage="Kindly Enter Last Name" ForeColor="Red" 
+                    ControlToValidate="last" ErrorMessage="Please enter your last name" ForeColor="Red" 
                     ValidationGroup="vldGrp1" Display="Dynamic">*</asp:RequiredFieldValidator>
               </div></td>
           </tr>
           <tr> 
-            <td class="text"><div align="right">Your full e-mail address</div></td>
+            <td class="righttext"><div align="right">Your full e-mail address</div></td>
             <td> <div align="center"> 
                 <input type="text" name="email address" runat = "server"  id="email">
                 <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
-                    ControlToValidate="email" ErrorMessage="Kindly Enter Valid Email ID" 
+                    ControlToValidate="email" ErrorMessage="Please enter a valid Email address" 
                     ForeColor="Red" 
                     ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
                     ValidationGroup="vldGrp1" Display="Dynamic">*</asp:RegularExpressionValidator>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
-                    ControlToValidate="email" ErrorMessage="Kindly Enter Email Id" ForeColor="Red" 
+                    ControlToValidate="email" ErrorMessage="Please enter a valid Email address" ForeColor="Red" 
                     ValidationGroup="vldGrp1" Display="Dynamic">*</asp:RequiredFieldValidator>
               </div></td>
           </tr>
           <tr>
-            <td class="text"><div align="right"><em>Important: Please enter a valid email address, as it will be used to process your payment. We will under no circumstance 
-  share your email with third-parties</em>.</div></td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr> 
-            <td>&nbsp;</td>
+            <td class="righttext"><asp:ValidationSummary ID="ValidationSummary1" runat="server" 
+                    ForeColor="Red" ValidationGroup="vldGrp1" /></td>
             <td><div align="center"> 
                 <p> 
                   <asp:Button ID="Login" runat="server" Text="Login" onclick="Login_Click" 
                         ValidationGroup="vldGrp1" />  &nbsp;&nbsp;
                   <%--<asp:HyperLink ID="lnkNewUser" Target ="Profile.aspx" runat="server">New User</asp:HyperLink>--%>
-                  <a href="profile.aspx" >New User</a>
+                  <%--<a href="profile.aspx" >New User</a>--%>
                     <%--<asp:HyperLink ID="HyperLink1" runat="server">HyperLink</asp:HyperLink>--%>
                     <%--<asp:Button ID="NewUser" runat="server" Text="New User" />--%>
                   <br>
                 </p>
               </div></td>
+          </tr>
+          <tr> 
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
           </tr>
           </table>
           
