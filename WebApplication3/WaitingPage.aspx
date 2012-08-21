@@ -14,7 +14,7 @@
     </asp:ScriptManager>
 <br/>
     Your ID is: 
- <asp:Label ID="Label1" runat="server"  style="font-size:medium; text-align:center"></asp:Label>
+ <asp:Label ID="Label1" runat="server"  style="font-size:small"></asp:Label>
 <br/>
 <br/>
 

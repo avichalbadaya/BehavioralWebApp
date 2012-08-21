@@ -18,6 +18,10 @@ namespace WebApplication3
         {
             // ScriptManager1.RegisterAsyncPostBackControl(UpdateMessage);
 
+            //round number
+            round.Text = ((int)Application["CurrentRound"]).ToString();
+            
+
             if (ConfigurationManager.AppSettings["GameMode"].ToString().Trim() == "B")
             {
                 if (!((bool)Application["active"]))
@@ -28,7 +32,7 @@ namespace WebApplication3
                 int remainingtime;
                 if (!Page.IsPostBack)
                 {
-                    (new DA()).insertchoiceofuser(((int)Application["CurrentRound"]) + 1, ((int)(Application["ChildRoundNo"])) % (((int)Application["bnTreeLevel"]) - 1) + 1, Convert.ToInt32(Session["InGameID"]), Convert.ToInt32(Session["ID"]), (int)Session["TeamId"], 0, 0);
+                    //(new DA()).insertchoiceofuser(((int)Application["CurrentRound"]) + 1, ((int)(Application["ChildRoundNo"])) % (((int)Application["bnTreeLevel"]) - 1) + 1, Convert.ToInt32(Session["InGameID"]), Convert.ToInt32(Session["ID"]), (int)Session["TeamId"], 0, 0);
 
                     //revertAverage(((int)Application["CurrentRound"]), Int32.Parse(Session["InGameID"].ToString()), (int)Application["bnTreeLevel"]);
                 }

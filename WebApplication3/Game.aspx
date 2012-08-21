@@ -15,7 +15,7 @@
         
         <tr>
             <td width="400">
-                Project xxx</td>
+                Project  <asp:Label ID="round" runat="server"  style="font-size:small; text-align:center"></asp:Label></td>
             <td width="150">
     
                 &nbsp;</td>
