@@ -27,7 +27,8 @@ namespace WebApplication3
                 if (1 == 2)
                 { }
             }
-            Label1.Text = Session["Name"].ToString() + " and your Session ID is :" + Convert.ToInt32(Session["ID"]).ToString() + " and Current Round is " + (Convert.ToInt32(Application["CurrentRound"]) + 1).ToString();
+            //Label1.Text = Session["Name"].ToString() + " and your Session ID is :" + Convert.ToInt32(Session["ID"]).ToString() + " and Current Round is " + (Convert.ToInt32(Application["CurrentRound"]) + 1).ToString();
+            Label1.Text = Session["Name"].ToString() + ". The current Round is " + (Convert.ToInt32(Application["CurrentRound"]) + 1).ToString();
         }
         protected void UpdateTimer_Tick(object sender, EventArgs e)
         {

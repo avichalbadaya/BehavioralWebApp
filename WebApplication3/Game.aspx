@@ -1,39 +1,69 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Game.aspx.cs" Inherits="WebApplication3.Game" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div>Choose the amount you want to spend and click ok</div>
+    <div>
+        <br />
+&nbsp;&nbsp; </div>
+    <table align="center">
+        
+        <tr>
+            <td width="400">
+                Project xxx</td>
+            <td width="150">
+    
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        
+        <tr>
+            <td width="400">
+                Choose how much you want to contribute to the team project.
+            </td>
+            <td width="150">
     
     <asp:DropDownList ID="DropDownList1" runat="server" Width="100px">
-        <asp:ListItem>0</asp:ListItem>
-        <asp:ListItem>1</asp:ListItem>
-        <asp:ListItem>2</asp:ListItem>
-        <asp:ListItem>3</asp:ListItem>
-        <asp:ListItem>4</asp:ListItem>
-        <asp:ListItem>5</asp:ListItem>
-        <asp:ListItem>6</asp:ListItem>
-        <asp:ListItem>7</asp:ListItem>
-        <asp:ListItem>8</asp:ListItem>
-        <asp:ListItem>9</asp:ListItem>
-        <asp:ListItem>10</asp:ListItem>
-        <asp:ListItem>11</asp:ListItem>
-        <asp:ListItem>12</asp:ListItem>
-        <asp:ListItem>13</asp:ListItem>
-        <asp:ListItem>14</asp:ListItem>
-        <asp:ListItem>15</asp:ListItem>
-        <asp:ListItem>16</asp:ListItem>
-        <asp:ListItem>17</asp:ListItem>
-        <asp:ListItem>18</asp:ListItem>
-        <asp:ListItem>19</asp:ListItem>
-        <asp:ListItem>20</asp:ListItem>
+        <asp:ListItem> 0 hr</asp:ListItem>
+        <asp:ListItem> 1 hr</asp:ListItem>
+        <asp:ListItem> 2 hrs</asp:ListItem>
+        <asp:ListItem> 3 hrs</asp:ListItem>
+        <asp:ListItem> 4 hrs</asp:ListItem>
+        <asp:ListItem> 5 hrs</asp:ListItem>
+        <asp:ListItem> 6 hrs</asp:ListItem>
+        <asp:ListItem> 7 hrs</asp:ListItem>
+        <asp:ListItem> 8 hrs</asp:ListItem>
+        <asp:ListItem> 9 hrs</asp:ListItem>
+        <asp:ListItem>10 hrs</asp:ListItem>
+        <asp:ListItem>11 hrs</asp:ListItem>
+        <asp:ListItem>12 hrs</asp:ListItem>
+        <asp:ListItem>13 hrs</asp:ListItem>
+        <asp:ListItem>14 hrs</asp:ListItem>
+        <asp:ListItem>15 hrs</asp:ListItem>
+        <asp:ListItem>16 hrs</asp:ListItem>
+        <asp:ListItem>17 hrs</asp:ListItem>
+        <asp:ListItem>18 hrs</asp:ListItem>
+        <asp:ListItem>19 hrs</asp:ListItem>
+        <asp:ListItem>20 hrs</asp:ListItem>
     </asp:DropDownList>
+
+            </td>
+            <td>
+    <asp:Button ID="Button1" UseSubmitBehavior= "true" runat="server" onclick="Button1_Click" Text="Ok" />
+            </td>
+        </tr>
+    </table>
 
     <br />
     <br />
     
     <br />
-    <br />
-    <asp:Button ID="Button1" UseSubmitBehavior= "true" runat="server" onclick="Button1_Click" Text="Ok" />
     <asp:ScriptManager ID="ScriptManager1" runat="server">
     </asp:ScriptManager>
     <%--<asp:Timer ID="UpdateTimeCheck" interval="2000" runat="server" ontick="UpdateTimer_Tick"></asp:Timer>
@@ -84,7 +114,7 @@
                 <asp:TemplateField AccessibleHeaderText="Punishment" HeaderText="Punishment">
                 <ItemTemplate>
                     <asp:DropDownList ID ="ddlPunishment" runat= "server">
-                         <asp:ListItem>0</asp:ListItem>
+                        <asp:ListItem>0</asp:ListItem>
                         <asp:ListItem>1</asp:ListItem>
                         <asp:ListItem>2</asp:ListItem>
                         <asp:ListItem>3</asp:ListItem>
@@ -121,7 +151,7 @@
     <br />
     <br />
     <asp:Label ID="Label1" runat="server" 
-        Text="Waiting for your team mates response..."></asp:Label>
+        Text="Waiting for your teammates to respond..." style="text-align: center"></asp:Label>
 
 
 </asp:Content>
