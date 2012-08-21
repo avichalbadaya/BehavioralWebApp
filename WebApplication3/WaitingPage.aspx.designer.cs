@@ -31,6 +31,15 @@ namespace WebApplication3 {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
+        /// lblNoOfPlayers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNoOfPlayers;
+        
+        /// <summary>
         /// UpdateTimeCheck control.
         /// </summary>
         /// <remarks>
@@ -47,15 +56,6 @@ namespace WebApplication3 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel TimedPanel;
-        
-        /// <summary>
-        /// lblNoOfPlayers control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNoOfPlayers;
         
         /// <summary>
         /// hdnGameCommence control.

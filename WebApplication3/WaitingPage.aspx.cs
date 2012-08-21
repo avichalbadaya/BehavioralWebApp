@@ -123,7 +123,7 @@ namespace WebApplication3
                         }
                         else
                         {
-                            lblNoOfPlayers.Text = "Commencing round:- " + (((int)Application["ChildRoundNo"]) % Convert.ToInt16(ConfigurationManager.AppSettings["NoOfRound"]) + 1).ToString() + " in " + (20 - getTimeDifferenceNow(Application["WaitingTime"].ToString())).ToString() + " seconds Get Ready for your turn ";
+                            lblNoOfPlayers.Text = "Initiating Round:- " + (((int)Application["ChildRoundNo"]) % Convert.ToInt16(ConfigurationManager.AppSettings["NoOfRound"]) + 1).ToString() + " in " + (20 - getTimeDifferenceNow(Application["WaitingTime"].ToString())).ToString() + " seconds Get Ready for your turn ";
                             return;
                         }
                     }
@@ -131,7 +131,7 @@ namespace WebApplication3
             }
             else
             {
-                lblNoOfPlayers.Text = "Waiting for " + Application["OnlineUsers"].ToString();
+                lblNoOfPlayers.Text = "Waiting for " + (15-(int)Application["OnlineUsers"]).ToString() + " more players.";
             }
         }
 
