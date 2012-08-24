@@ -71,6 +71,7 @@
         form will be emailed to the email address you supply for your record. 
         (For this reason, it is very important that you submit a valid and complete 
         email address). Your personal information will NOT be shared with anyone.      </p>
+        <p class="consent">&nbsp;</p>
       
         <table width="600" class="dottedtable" align="center">
           <tr> 

@@ -24,21 +24,23 @@
 <br/>
     
    
-  <div id="dvWait" style="font-size:small; text-align:center">
-                <asp:Label runat="server" id="lblNoOfPlayers" />
-                <br /><br />
-    <img src="graphics/hourglass.gif"/>&nbsp;<br />
-        <br />
-        The next round will initiate once we have 15 players in the Waiting Room. 
+  <div id="dvWait" style="font-size:small; text-align:center">                
+                <br />
+
     <asp:Timer ID="UpdateTimeCheck" interval="1000" runat="server" ontick="UpdateTimer_Tick"></asp:Timer>
     <asp:UpdatePanel runat="server" id="TimedPanel" updatemode="Conditional">
             <Triggers>
                 <asp:AsyncPostBackTrigger controlid="UpdateTimeCheck" eventname="Tick" />
             </Triggers>
             <ContentTemplate>
+                <asp:Label runat="server" id="lblNoOfPlayers"></asp:Label>
                 <asp:HiddenField ID="hdnGameCommence" Value="ABC" runat="server" />
             </ContentTemplate>
         </asp:UpdatePanel>
+            <br />
+            <img src="graphics/hourglass.gif"/>&nbsp;
+            <br />
+        The next round will initiate once we have 15 players in the Waiting Room. 
 </div>
 &nbsp;<br/>
 <br/>

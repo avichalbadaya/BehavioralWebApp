@@ -38,10 +38,11 @@ namespace WebApplication3
             DateTime startTime = DateTime.Now;
             intTreeLevel = (int)Application["bnTreeLevel"];
 
-           // Label1.Text = Session["Name"].ToString();
+           // If enough players in the Waiting Room...
             if (Application["OnlineUsers"].ToString() == ConfigurationManager.AppSettings["NoOfPlayers"])
             {
-                //Random obk = new Random();
+
+                //Binary tree condition
                 if (ConfigurationManager.AppSettings["GameMode"].ToString().Trim() == "B")
                 {
 
@@ -130,9 +131,12 @@ namespace WebApplication3
                     }
                 }
             }
+
+            //If still waiting for more players...
             else
             {
                 lblNoOfPlayers.Text = "Waiting for " + (15-(int)Application["OnlineUsers"]).ToString() + " more players.";
+                return;
             }
         }
 

@@ -136,7 +136,7 @@ namespace WebApplication3
                 }
 
                 //remainingtime = 31 - getTimeDifferenceNow(Application["CurrentRoundStartTime"].ToString());
-                remainingtime = ConfigurationManager.AppSettings["TimerContribution"].ToString().Trim() - getTimeDifferenceNow(Application["CurrentRoundStartTime"].ToString());
+                remainingtime = Convert.ToInt32(ConfigurationManager.AppSettings["TimerContributino"]) - getTimeDifferenceNow(Application["CurrentRoundStartTime"].ToString());
 
                 if (remainingtime > 0)
                 {
