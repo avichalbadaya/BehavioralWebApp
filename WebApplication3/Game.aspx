@@ -65,8 +65,7 @@
     <br />
     
     <br />
-    <asp:ScriptManager ID="ScriptManager1" runat="server">
-    </asp:ScriptManager>
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <%--<asp:Timer ID="UpdateTimeCheck" interval="2000" runat="server" ontick="UpdateTimer_Tick"></asp:Timer>
    --%> <asp:UpdatePanel ID="UpdatePanel1" UpdateMode="Always" runat="server">
       
@@ -80,7 +79,7 @@
     </asp:UpdatePanel>
 
      <asp:Timer ID="UpdateMessage" interval="500"  runat="server" ontick="UpdateMessage_Tick"></asp:Timer>
-<asp:UpdatePanel ID="UpdatePanel2" UpdateMode="Always" runat="server">
+    <asp:UpdatePanel ID="UpdatePanel2" UpdateMode="Always" runat="server">
     <Triggers>
                 <asp:AsyncPostBackTrigger controlid="UpdateMessage" eventname="Tick" />
             </Triggers>

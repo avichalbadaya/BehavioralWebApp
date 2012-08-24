@@ -114,6 +114,7 @@ namespace WebApplication3
         protected void UpdateMessage_Tick(object sender, EventArgs e)
         {
             
+            //Condition: tree
             if (ConfigurationManager.AppSettings["GameMode"].ToString().Trim() == "B")
             {
                 int remainingtime;
@@ -134,11 +135,12 @@ namespace WebApplication3
                     Response.Redirect("~/WaitingPage.aspx");
                 }
 
+                //remainingtime = 31 - getTimeDifferenceNow(Application["CurrentRoundStartTime"].ToString());
+                remainingtime = ConfigurationManager.AppSettings["TimerContribution"].ToString().Trim() - getTimeDifferenceNow(Application["CurrentRoundStartTime"].ToString());
 
-                remainingtime = 31 - getTimeDifferenceNow(Application["CurrentRoundStartTime"].ToString());
                 if (remainingtime > 0)
                 {
-                    lblMessage.Text = "Total Time Remaining is " + remainingtime.ToString() + " Seconds";
+                    lblMessage.Text = remainingtime.ToString() + " seconds remaining.";
                     int ID = Int32.Parse(Session["ID"].ToString());
                     int result = 0;
                     //int Team_ID = Math.DivRem(ID, 2, out result);
@@ -159,7 +161,7 @@ namespace WebApplication3
                 }
                 else
                 {
-                    lblMessage.Text = "The time is over Calculating earnings : Get Ready ";
+                    lblMessage.Text = "The time is over. Calculating earnings : Get Ready ";
                 }
                
                 
@@ -168,6 +170,7 @@ namespace WebApplication3
                 if (remainingtime < -1 && remainingtime > -11)
                 {
                     int Team_ID = (int)Session["TeamId"];
+                    
                     //punishment logic
                     if (grdPunishMent.Visible == false || grdPunishMent.Rows.Count==0)
                     {
