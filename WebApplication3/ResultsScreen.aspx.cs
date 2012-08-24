@@ -89,14 +89,14 @@ namespace WebApplication3
                         }
                         else
                         {
-                            lblNoOfPlayers.Text = "Commencing Next round:- " + ((int)Application["CurrentRound"] + 1).ToString() + " in " + (20 - getTimeDifferenceNow(hdnGameCommence.Value)).ToString() + " seconds Get Ready for your turn ";
+                            lblNoOfPlayers.Text = "Initiating the next round:- " + ((int)Application["CurrentRound"] + 1).ToString() + " in " + (20 - getTimeDifferenceNow(hdnGameCommence.Value)).ToString() + " seconds.";
                             return;
                         }
                     }
                 }
                 else
                 {
-                    lblNoOfPlayers.Text = "The Game has finished:-";
+                    lblNoOfPlayers.Text = "The Game has finished: ";
 
                 }
             }

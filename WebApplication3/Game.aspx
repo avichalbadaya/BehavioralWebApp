@@ -7,6 +7,7 @@
         }
     </style>
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         <br />
@@ -14,7 +15,7 @@
     <table align="center">
         
         <tr>
-            <td width="400">
+            <td width="400" class="subheader">
                 Project  <asp:Label ID="round" runat="server"  style="font-size:small; text-align:center"></asp:Label></td>
             <td width="150">
     
@@ -25,7 +26,7 @@
         
         <tr>
             <td width="400">
-                Choose how much you want to contribute to the team project.
+                Please choose how much you want to contribute to the team project.
             </td>
             <td width="150">
     
@@ -96,7 +97,7 @@
     <%--<asp:Button runat="server" id= "btnPunish" Text="Punish" 
             onclick="btnPunish_Click" />--%>
     
-
+    <div align="center">
     </ContentTemplate>
     </asp:UpdatePanel>
     <asp:UpdatePanel ID = "UpdatePanel3" UpdateMode ="Conditional" runat= "server">
@@ -143,7 +144,7 @@
             <SortedDescendingCellStyle BackColor="#CAC9C9" />
             <SortedDescendingHeaderStyle BackColor="#000065" />
         </asp:GridView>
-        
+        </div>
         </ContentTemplate>
     </asp:UpdatePanel>
 

@@ -2,8 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:ScriptManager ID="ScriptManager1" runat="server">
-    </asp:ScriptManager>
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <table id = "tblVis" runat = "server">
     <tr><td>Earning For Round 1:  <asp:Label ID="lblRound1" runat="server" Text="Label"></asp:Label></td></tr>
     <tr><td>Earning For Round 2:  <asp:Label ID="lblRound2" runat="server" Text="Label"></asp:Label></td></tr>
